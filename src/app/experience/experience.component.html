@@ -1,0 +1,14 @@
+<h3>My working experience is:</h3>
+<ul>
+    <li *ngFor="let exp of experience">
+        Working at {{exp.employer}}
+        <ul>
+            <li>
+                 I worked here as {{exp.function}}.
+            </li>
+            <li>
+                I was employed here from {{exp.start}} to {{exp.end}}.
+            </li>
+        </ul>
+    </li>
+</ul>

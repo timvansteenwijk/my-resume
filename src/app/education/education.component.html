@@ -1,0 +1,12 @@
+<h3>Education enjoyed:</h3>
+<ul>
+    <li *ngFor="let edu of education">
+        School: {{edu.school}}
+        <ul>
+            <li>Studied subject: {{edu.subject}}</li>
+            <li>Studied here from {{edu.start}} to {{edu.end}}.</li>
+            <li *ngIf="edu.completed">I have successfully completed this education.</li>
+            <li *ngIf="!edu.completed">I have not completed this education.</li>
+        </ul>
+    </li>
+</ul>
