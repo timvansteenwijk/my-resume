@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MenuItem } from './menu-item';
+import { menu } from './menu';
 
 @Component({
     selector: 'app-menu',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
 })
 
 export class MenuComponent {
+    menu: MenuItem[] = menu;
 
+    // constructor() {
+    //     console.log(menu);
+    // }
 }

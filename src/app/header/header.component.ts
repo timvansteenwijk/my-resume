@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TESTPERSON } from '../mock-person';
+import { Person } from '../person';
 
 @Component({
     selector: 'app-header',
@@ -8,5 +9,5 @@ import { TESTPERSON } from '../mock-person';
 })
 
 export class HeaderComponent {
-    person = TESTPERSON;
+    person: Person = TESTPERSON;
 }

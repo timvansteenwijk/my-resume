@@ -1,6 +1,3 @@
 <ul>
-    <li><a routerLink="/info">Personal Information</a></li>
-    <li><a routerLink="/education">Education</a></li>
-    <li><a routerLink="/experience">Experience</a></li>
-    <li><a routerLink="/hobbies">Hobbies</a></li>
+    <li *ngFor='let menuItem of menu'><a routerLink="{{menuItem.path}}">{{menuItem.text}}</a></li>
 </ul>

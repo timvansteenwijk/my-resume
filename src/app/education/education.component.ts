@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TESTPERSON } from '../mock-person';
+import { Education } from '../person';
 
 @Component({
     selector: 'app-education',
@@ -7,5 +8,5 @@ import { TESTPERSON } from '../mock-person';
 })
 
 export class EducationComponent {
-    education = TESTPERSON.education;
+    educationList: Education[] = TESTPERSON.education;
 }

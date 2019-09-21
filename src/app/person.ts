@@ -1,23 +1,29 @@
-export class Person {
+export interface Person {
     name: string;
-    general: {
-        fullname: string,
-        address: string,
-        phone: number,
-        email: string
-    };
-    education: {
-            school: string,
-            subject: string,
-            start: number,
-            end: number,
-            completed: boolean
-        }[];
-    experience: {
-        employer: string,
-        function: string,
-        start: number,
-        end: number
-    }[];
+    general: General;
+    education: Education[];
+    experience: Experience[];
     hobbies: string[];
+}
+
+export interface General {
+    fullname: string;
+    address: string;
+    phone: number;
+    email: string;
+}
+
+export interface Education {
+    school: string;
+    subject: string;
+    start: number;
+    end: number;
+    completed: boolean;
+}
+
+export interface Experience {
+    employer: string;
+    function: string;
+    start: number;
+    end: number;
 }

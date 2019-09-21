@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TESTPERSON } from '../mock-person';
+import { Person } from '../person';
 
 @Component({
     selector: 'app-general-info',
@@ -8,5 +9,5 @@ import { TESTPERSON } from '../mock-person';
 })
 
 export class GeneralInfoComponent {
-    person = TESTPERSON;
+    person: Person = TESTPERSON;
 }

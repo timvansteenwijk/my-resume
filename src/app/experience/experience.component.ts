@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TESTPERSON } from '../mock-person';
+import { Experience } from '../person';
 
 @Component({
     selector: 'app-experience',
@@ -7,5 +8,5 @@ import { TESTPERSON } from '../mock-person';
 })
 
 export class ExperienceComponent {
-    experience = TESTPERSON.experience;
+    experienceList: Experience[] = TESTPERSON.experience;
 }
