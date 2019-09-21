@@ -1,13 +1,7 @@
-div {
-    position: relative;
+app-header {
+    text-align: center;
 }
 
-app-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.subcont {
-    width: 70%;
+.container {
+    margin-top: 20px;
 }
