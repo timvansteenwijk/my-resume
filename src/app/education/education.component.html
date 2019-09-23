@@ -1,13 +1,11 @@
 <h2>Education enjoyed:</h2>
-<ul>
-    <li *ngFor="let education of educationList">
-        School: {{education.school}}
-        <ul>
-            <li>Studied subject: {{education.subject}}</li>
-            <li>Studied here from {{education.start}} to {{education.end}}.</li>
-            <li *ngIf="education.completed">I have successfully completed this education.</li>
-            <li *ngIf="!education.completed">I have not completed this education.</li>
-        </ul>
-    </li>
-</ul>
+<div *ngFor="let education of educationList">
+    School: {{education.school}}
+    <ul>
+        <li>Studied subject: {{education.subject}}</li>
+        <li>Studied here from {{education.start}} to {{education.end}}.</li>
+        <li *ngIf="education.completed">I have successfully completed this education.</li>
+        <li *ngIf="!education.completed">I have not completed this education.</li>
+    </ul>
+</div>
 <p><a routerLink='/home'>Go back</a></p>

@@ -1,15 +1,13 @@
 <h2>My working experience is:</h2>
-<ul>
-    <li *ngFor="let experience of experienceList">
-        Working at {{experience.employer}}
-        <ul>
-            <li>
-                I worked here as {{experience.function}}.
-            </li>
-            <li>
-                I was employed here from {{experience.start}} to {{experience.end}}.
-            </li>
-        </ul>
-    </li>
-</ul>
+<div *ngFor="let experience of experienceList">
+    Working at {{experience.employer}}
+    <ul>
+        <li>
+            I worked here as {{experience.function}}.
+        </li>
+        <li>
+            I was employed here from {{experience.start}} to {{experience.end}}.
+        </li>
+    </ul>
+</div>
 <p><a routerLink='/home'>Go back</a></p>
